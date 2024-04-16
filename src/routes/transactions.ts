@@ -48,8 +48,6 @@ export async function transactionsRoutes(app: FastifyInstance) {
 
        let sessionId = request.cookies.sessionId
 
-       console.log('Ta vindo cookie: ', sessionId)
-
         if (!sessionId) {
             sessionId = randomUUID()
 
